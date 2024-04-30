@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node --env-file .env index.js"
+    "start": "node --env-file .env index.js",
+    "build": "next build && npx playwright install"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -13,7 +14,7 @@
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
     "playwright": "^1.43.1"
-    
+
   },
   "devDependencies": {
     "playwright": "^1.43.1"
