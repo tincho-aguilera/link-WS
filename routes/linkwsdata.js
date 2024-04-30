@@ -7,7 +7,8 @@ router.get('/', function (req, res) {
 })
 /* POST home page. */
 router.post('/',async function(req, res, next) {
-  const browser = await playwright.firefox.launch({ headless: true });
+  // const browser = await playwright.firefox.launch({ headless: true });
+  const browser = await playwright.chromium.launch({ headless: true });
   // Crear un nuevo contexto de página
   const context = await browser.newContext();
   
