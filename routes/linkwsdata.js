@@ -1,8 +1,10 @@
-const { log } = require('debug/src/browser');
 let express = require('express');
 let router = express.Router();
 const playwright = require('playwright')
-
+/* GET home page. */
+router.get('/', function (req, res) {
+  res.send('hello world')
+})
 /* POST home page. */
 router.post('/',async function(req, res, next) {
   const browser = await playwright.firefox.launch({ headless: true });
