@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node --env-file .env index.js",
-    "build": "npx playwright install && express build"
+    "build": "npx playwright install && vercel build"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
